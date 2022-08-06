@@ -1,0 +1,75 @@
+div {
+    --c: 12rem;
+    --fz: 5;
+    --h: 10;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    inline-size: 25rem;
+    position: relative;
+}
+
+b {
+    transform: translate(-50%, -50%);
+}
+
+b,
+strong {
+    color: hsl(var(--h), 55%, 50%);
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    position: absolute;
+    /* translate: -50% -50%; */
+    white-space: nowrap;
+}
+
+strong {
+    inline-size: var(--c);
+    padding-inline-start: var(--c);
+    transform: translate(-50%, -50%) rotate(calc(var(--d) * 1deg * (360 / var(--ln, 1))));
+    /* rotate: calc(var(--d) * 1deg * (360 / var(--ln, 1))); */
+}
+
+strong:nth-of-type(4n+1) {
+    font-size: calc(1em + (var(--fz) * 0.050em));
+}
+
+strong:nth-of-type(2n+2) {
+    font-size: calc(1em + (var(--fz) * 0.075em));
+}
+
+b,
+strong:nth-of-type(4n+3) {
+    font-size: calc(1em + (var(--fz) * 0.095em));
+}
+
+* {
+    box-sizing: border-box;
+    margin: unset;
+}
+
+html {
+    block-size: 100%;
+}
+
+body {
+    display: grid;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    min-block-size: 100vh;
+    place-content: center;
+}
+
+fieldset {
+    background: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 80%);
+    font-family: monospace;
+    inline-size: calc(100% - 2em);
+    inset-block-end: 0;
+    margin: 1em;
+    position: fixed;
+}
+
+label {
+    align-items: center;
+    display: inline-flex;
+    gap: 2ch;
+}

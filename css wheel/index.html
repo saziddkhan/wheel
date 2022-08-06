@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="circle" id="app" style="--ln:28;">
+        <b>mystery</b>
+        <strong style="--d:0;--h:0;">silence</strong>
+        <strong style="--d:1;--h:12;">sound</strong>
+        <strong style="--d:2;--h:25;">storytelling</strong>
+        <strong style="--d:3;--h:38;">surprise</strong>
+        <strong style="--d:4;--h:51;">symbolism</strong>
+        <strong style="--d:5;--h:64;">synchronocity</strong>
+        <strong style="--d:6;--h:77;">synergy</strong>
+        <strong style="--d:7;--h:90;">wholeness</strong>
+        <strong style="--d:8;--h:102;">witnessing</strong>
+        <strong style="--d:9;--h:115;">art</strong>
+        <strong style="--d:10;--h:128;">clearing</strong>
+        <strong style="--d:11;--h:141;">connectedness</strong>
+        <strong style="--d:12;--h:154;">discernment</strong>
+        <strong style="--d:13;--h:167;">facing darkness</strong>
+        <strong style="--d:14;--h:180;">healing</strong>
+        <strong style="--d:15;--h:192;">intuition</strong>
+        <strong style="--d:16;--h:205;">listening</strong>
+        <strong style="--d:17;--h:218;">love</strong>
+        <strong style="--d:18;--h:231;">movement</strong>
+        <strong style="--d:19;--h:244;">music</strong>
+        <strong style="--d:20;--h:257;">mystery</strong>
+        <strong style="--d:21;--h:270;">non-attachment</strong>
+        <strong style="--d:22;--h:282;">non-judgment</strong>
+        <strong style="--d:23;--h:295;">not knowing</strong>
+        <strong style="--d:24;--h:308;">quickening</strong>
+        <strong style="--d:25;--h:321;">re-membering</strong>
+        <strong style="--d:26;--h:334;">sensing</strong>
+        <strong style="--d:27;--h:347;">service</strong>
+    </div>
+    <fieldset>
+        <legend>Controls</legend>
+        <label>Circle Size
+            <input type="range" min="6" max="40" value="12" oninput="app.style.setProperty('--c', this.value+'rem')" />
+        </label>
+        <label>Font Size
+            <input type="range" min="1" max="10" value="5" oninput="app.style.setProperty('--fz', this.valueAsNumber)" />
+        </label>
+    </fieldset>
+    
+</body>
+</html>
